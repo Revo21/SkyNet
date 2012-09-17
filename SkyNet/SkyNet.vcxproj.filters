@@ -19,14 +19,14 @@
     <Filter Include="Header Files\Script Dragon">
       <UniqueIdentifier>{52f2e132-1798-4252-b4ec-b2067b0db310}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{e81fab12-fdc2-4fd8-a697-e6612f02e059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{41bc52b3-5c3c-4011-9cc3-f7da459c7ca7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Script Dragon\enums.h">
       <Filter>Header Files\Script Dragon</Filter>
     </ClInclude>
@@ -45,16 +45,22 @@
     <ClInclude Include="Script Dragon\types.h">
       <Filter>Header Files\Script Dragon</Filter>
     </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SkyNet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Script Dragon\plugin.cpp">
       <Filter>Source Files\Script Dragon</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\System</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
