@@ -72,6 +72,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>Script Dragon\plugin.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(SolutionDir)Output\ASI
@@ -101,20 +102,21 @@ copy  /Y $(SolutionDir)Temp\$(Configuration)\SkyNetHelper.dll $(SolutionDir)Outp
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="Script Dragon\enums.h" />
+    <ClInclude Include="Script Dragon\invoke.h" />
+    <ClInclude Include="Script Dragon\obscript.h" />
+    <ClInclude Include="Script Dragon\plugin.h" />
+    <ClInclude Include="Script Dragon\skyscript.h" />
+    <ClInclude Include="Script Dragon\types.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
+    <ClCompile Include="Script Dragon\plugin.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      </PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">plugin.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)plugin.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SkyNet.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -133,6 +135,9 @@ copy  /Y $(SolutionDir)Temp\$(Configuration)\SkyNetHelper.dll $(SolutionDir)Outp
     <ProjectReference Include="..\SkyNetHelper\SkyNetHelper.csproj">
       <Project>{04d55430-41a0-45b6-b461-68280473f275}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Script Dragon\plugin.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

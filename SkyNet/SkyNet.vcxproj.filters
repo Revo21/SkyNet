@@ -13,9 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <Filter Include="Source Files\Script Dragon">
+      <UniqueIdentifier>{5d5df6dd-1c31-4f85-90a0-5a8a266d2d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Script Dragon">
+      <UniqueIdentifier>{52f2e132-1798-4252-b4ec-b2067b0db310}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -23,6 +26,24 @@
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Script Dragon\enums.h">
+      <Filter>Header Files\Script Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Script Dragon\invoke.h">
+      <Filter>Header Files\Script Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Script Dragon\obscript.h">
+      <Filter>Header Files\Script Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Script Dragon\plugin.h">
+      <Filter>Header Files\Script Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Script Dragon\skyscript.h">
+      <Filter>Header Files\Script Dragon</Filter>
+    </ClInclude>
+    <ClInclude Include="Script Dragon\types.h">
+      <Filter>Header Files\Script Dragon</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -32,8 +53,13 @@
     <ClCompile Include="SkyNet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Script Dragon\plugin.cpp">
+      <Filter>Source Files\Script Dragon</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Script Dragon\plugin.def">
+      <Filter>Source Files\Script Dragon</Filter>
+    </None>
   </ItemGroup>
 </Project>
