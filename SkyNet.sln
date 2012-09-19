@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SkyNet", "SkyNet\SkyNet.vcxproj", "{286A91D9-76A7-40E6-A223-2A67F7705745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyNetHelper", "SkyNetHelper\SkyNetHelper.csproj", "{04D55430-41A0-45B6-B461-68280473F275}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyNetLauncher", "SkyNetLauncher\SkyNetLauncher.csproj", "{5E926880-4CBF-4B60-9747-909513F6CBBA}"
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ClientModel", "ClientModel\ClientModel.modelproj", "{8D9567DC-40D5-41EA-AD39-C2B792C445CE}"
@@ -23,16 +21,6 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{04D55430-41A0-45B6-B461-68280473F275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Debug|Win32.ActiveCfg = Debug|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Release|Any CPU.Build.0 = Release|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{04D55430-41A0-45B6-B461-68280473F275}.Release|Win32.ActiveCfg = Release|Any CPU
 		{06188CA0-6C3E-4DA7-9DE8-5864A1A6A12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06188CA0-6C3E-4DA7-9DE8-5864A1A6A12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06188CA0-6C3E-4DA7-9DE8-5864A1A6A12B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU

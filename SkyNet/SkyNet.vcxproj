@@ -132,11 +132,6 @@ copy  /Y $(SolutionDir)Temp\$(Configuration)\SkyNetHelper.dll $(SolutionDir)Outp
     <Reference Include="System.Data.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SkyNetHelper\SkyNetHelper.csproj">
-      <Project>{04d55430-41a0-45b6-b461-68280473f275}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Script Dragon\plugin.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

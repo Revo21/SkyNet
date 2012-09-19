@@ -16,10 +16,160 @@
   </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="98fe892e-b001-40b9-80b6-b5509f0500d7" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="b70b1b63-532c-4f94-b7cd-f0d36891ccad" />
+      <class Id="e80ef8fb-965c-41ca-a5a6-67ec7508d8e6" name="Network" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f188772d-4d5a-4a6c-9006-fda83884649c" />
+        <ownedOperationsInternal>
+          <operation Id="0fe70330-b954-4bec-82b5-b3c36735febc" name="Login" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a6050b3-6ddb-4696-8f75-a0105b98d3f3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="342dee23-8d7e-4a8d-9944-1d406782c416" name="Username" direction="In" isUnique="false">
+                  <elementDefinition Id="2765030a-f2b4-4f6f-a5b1-4f2eee234715" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5ce36167-1384-494f-a24d-fa788343d78a" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1f1a62cb-8cc9-4279-9609-12de9bfe4d51" name="Password" direction="In" isUnique="false">
+                  <elementDefinition Id="d0caaf66-2235-43fb-95b0-81164f7f6d61" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5ce36167-1384-494f-a24d-fa788343d78a" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d337d3cf-73c2-4d95-93e9-3ff0faac75c7" name="SendGPS" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="07e3224c-968d-4d34-b720-18dfcd7845c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="06037e3d-b0ba-4083-bf38-5bb5f52420c3" name="X" direction="In" isUnique="false">
+                  <elementDefinition Id="4c1f7629-9d83-4835-9628-6e73369cfea7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="095ddf31-8904-4242-a6e9-34758067749f" LastKnownName="float" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="94a022f6-82cb-46a6-ba87-1e22bcba4415" name="Y : float Z" direction="In" isUnique="false">
+                  <elementDefinition Id="d329c920-1039-4bf5-ae8c-19e97f1f1612" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="095ddf31-8904-4242-a6e9-34758067749f" LastKnownName="float" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="67749428-a285-4b2f-9222-6e649dde8a44" name="SendChat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85900a80-0e98-4ca2-ab56-df5c80d65e60" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4e4af264-14dc-4c45-8d31-b3ab0d09d8fd" name="Message" direction="In" isUnique="false">
+                  <elementDefinition Id="31bf007a-3f1e-4edb-a014-7dd3811a43da" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5ce36167-1384-494f-a24d-fa788343d78a" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c8e3c58a-e2d2-47dc-b05a-3b6cd5c9225b" name="SendEquipArmor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6352473f-9167-4b8d-b50c-f2ecdd56a017" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="74c7ef7c-4c2e-4af6-8f6b-9cfedbc8ba36" name="ID" direction="In" isUnique="false">
+                  <elementDefinition Id="4dd67972-e4a3-4a56-9882-5abb4980ef5d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f8b59b48-feab-4766-98a4-c99913d8c9a6" LastKnownName="uint" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="86c70041-b6a7-4d06-9bb6-00c51cdb58a6" name="SendEquipWeapon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="79befe2a-b8e8-4a51-b9c3-6758a0aa345f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8c74b1dd-36d1-4ef9-b688-902dcb6a0a50" name="ID" direction="In" isUnique="false">
+                  <elementDefinition Id="34361153-a1dc-4edc-93d0-b122ac6f25ec" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f8b59b48-feab-4766-98a4-c99913d8c9a6" LastKnownName="uint" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2ebe599a-2d75-48e2-9c04-e45c8ac484a5" name="Left" direction="In" isUnique="false">
+                  <elementDefinition Id="ab3b9faf-891a-4f20-aa25-a8b96af59076" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8f2a3e95-268a-480e-8359-80a901ba4d94" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c714b8c9-c0b8-4b22-b65c-82406ec988f7" name="SendCell" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f5db49f7-de2f-4408-83fd-fd8b40ad0984" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="035191a4-f9d4-4cb8-bf3d-10a581962f53" name="ID" direction="In" isUnique="false">
+                  <elementDefinition Id="1310d56f-4b66-4608-877a-1e3d79a931f2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f8b59b48-feab-4766-98a4-c99913d8c9a6" LastKnownName="uint" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bf15c1a6-3c9c-42b9-b9b6-1ee35f0c7ef3" name="Connect" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="40ca2c2f-e15d-4065-a6ce-16809aa0bdfd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2d78a3b3-19f6-445b-8efe-eab09f8930db" name="Server" direction="In" isUnique="false">
+                  <elementDefinition Id="06bf93c9-6135-4167-95d2-fb9bfefb7dd0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5ce36167-1384-494f-a24d-fa788343d78a" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c20a32c9-00c3-44e2-a7a1-78c841d384a8" name="Port" direction="In" isUnique="false">
+                  <elementDefinition Id="7905c378-9ba3-4133-8b22-366dd5c18e56" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5c23249d-c495-42c6-b174-f80f9b992ec2" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5ce36167-1384-494f-a24d-fa788343d78a" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="d5308e62-0d6c-443c-89e9-fe5da5b6b3ea" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="095ddf31-8904-4242-a6e9-34758067749f" name="float" isAbstract="false" isLeaf="false" cachedFullName="float">
+        <elementDefinition Id="c2f2f108-15e9-4c18-93bc-bc03e93e6368" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f8b59b48-feab-4766-98a4-c99913d8c9a6" name="uint" isAbstract="false" isLeaf="false" cachedFullName="uint">
+        <elementDefinition Id="ac7883b5-8e7c-42fe-9ed2-e98efdecebd3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8f2a3e95-268a-480e-8359-80a901ba4d94" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="248480ba-c7a5-40c5-9525-51e987d6c171" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5c23249d-c495-42c6-b174-f80f9b992ec2" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="fe883a0e-b64a-4caf-a2d9-8ffecd3e9826" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="47d13ba3-869c-41ca-b168-d7b16061d2ad" name="ClientModel">
     <elementDefinition Id="ae0f8bde-6b7e-4122-8cf4-e0f11214a6a7" />
