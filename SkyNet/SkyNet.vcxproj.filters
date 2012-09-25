@@ -25,6 +25,15 @@
     <Filter Include="Source Files\System">
       <UniqueIdentifier>{41bc52b3-5c3c-4011-9cc3-f7da459c7ca7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\AwesomiumCppApi">
+      <UniqueIdentifier>{e228df47-3012-4c34-9b52-c09679c1ee26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AwesomiumCppApi">
+      <UniqueIdentifier>{c792f82e-0a92-47c2-b036-063b472a328a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helper">
+      <UniqueIdentifier>{0c85f244-70ec-443f-9bfc-4da3f21b8481}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Script Dragon\enums.h">
@@ -51,6 +60,12 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files\System</Filter>
     </ClInclude>
+    <ClInclude Include="AwesomiumCppApi.h">
+      <Filter>Header Files\AwesomiumCppApi</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperMethods.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SkyNet.cpp">
@@ -61,6 +76,9 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="AwesomiumCppApi.cpp">
+      <Filter>Source Files\AwesomiumCppApi</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

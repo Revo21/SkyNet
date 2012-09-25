@@ -102,6 +102,8 @@ copy  /Y $(SolutionDir)Temp\$(Configuration)\SkyNetHelper.dll $(SolutionDir)Outp
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AwesomiumCppApi.h" />
+    <ClInclude Include="HelperMethods.h" />
     <ClInclude Include="Script Dragon\enums.h" />
     <ClInclude Include="Script Dragon\invoke.h" />
     <ClInclude Include="Script Dragon\obscript.h" />
@@ -112,6 +114,7 @@ copy  /Y $(SolutionDir)Temp\$(Configuration)\SkyNetHelper.dll $(SolutionDir)Outp
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AwesomiumCppApi.cpp" />
     <ClCompile Include="Script Dragon\plugin.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">plugin.h</PrecompiledHeaderFile>
